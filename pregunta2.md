@@ -126,4 +126,8 @@ Función CCKM(Puntos, ML, CL, K, MaxCap, MinCap):
             break
         Centroides = NuevosCentroides
 
+    Asignaciones = Reparar_Min_Capacidad(Asignaciones, SuperNodos, MinCap)
+
+    Labels = Mapear_Puntos_Originales(Puntos, SuperNodos, Asignaciones)
+    Devolver Labels
 ```
